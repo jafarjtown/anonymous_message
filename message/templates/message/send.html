@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+{% if status %}
+       
+<form method="post" class="form">
+    {% csrf_token %}
+    <div>
+        <p>drop your message here &dArr;</p>
+    </div>
+<textarea name="m" id="" cols="30" rows="10"></textarea>
+<button>Send</button>
+</form>
+{% else %}
+<div class="error">
+    <p class="errorp">Error</p>
+    <p>Either this &uArr; LINK is broken or the message box is deleted</p>
+    <p>if you are the owner of this link and you think it's server error! please contact us <a href="#">contact</a></p>
+    <b>Thanks for your understanding</b>
+</div>
+{% endif %}
+ 
+
+{% endblock main %}

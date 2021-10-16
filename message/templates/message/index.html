@@ -1,0 +1,68 @@
+ {% extends 'index.html' %}
+
+ 
+ {% block main %}
+         
+    {% if m %}
+    <div class="links">
+        {% csrf_token %}
+        <div>
+            <b>Link to send messages</b>
+            <div>
+                <a href="{{m.link1}}" id="sLink" target="blank">{{m.link1}}</a>
+                <button class="copy_btn" id="copy1">
+                    copy
+                </button>
+            </div>
+        
+        </div>
+        <div>
+            <b>Link to view the messages</b>
+            <div><a href="{{m.link2}}" id="vLink" target="blank">{{m.link2}}</a>
+                <button class="copy_btn" id="copy2">copy</button>
+            </div>
+            
+        </div>
+        <button id="clear">Clear</button>
+    </div>
+    
+    {% else %}
+    <div class="start_div">
+        <button id="btn">Create Link</button> 
+        <p>to share to friends, co-workers, families, fans etc</p>
+        <div class="ul_div">
+            <b>Easy to create a link to share and receive anonymous messages direct</b>
+            <ul>
+                <li>no need to login or create account</li>
+                <li>just one click</li>
+                <li>real anonymous</li>
+                <li>easy to use</li>
+            </ul>
+        </div>
+    </div>
+        
+    {% endif %}
+        
+   
+    <div id="links" class="links">
+        <div>
+            <b>Link to send messages</b>
+            <div>
+                <a href="" id="sLink" ></a>
+                <button class="copy_btn" id="copy1">copy</button>
+            </div>
+        </div>
+        <div>
+            <b>Link to view the messages</b>
+            <div>
+                <a href="#" id="vLink">link2</a>
+                <button class="copy_btn" id="copy2">copy</button>
+            </div>
+            
+        </div>
+        <button id="clear">Clear</button>
+        
+    </div>
+
+ {% endblock main %}
+ 

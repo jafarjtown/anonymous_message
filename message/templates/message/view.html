@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block main %}
+
+{% if status %}   
+<div class="total_m_div">
+    <p>Total messages received : <b>{{messages.count}}</b></p>
+</div>
+<div class="messages_div">
+    {% for m in messages.all %}
+<div class="message">
+    <p>Anonymous</p>
+    <div class="text">
+        <p>{{m.message}}</p>
+    </div>
+    <span>
+        {{m.timestamp}}
+    </span>
+</div>
+    
+{% endfor %}
+</div>
+    
+{% else %}
+<div class="error">
+    <p class="errorp">Error</p>
+    <p>Either this &uArr; LINK is broken or the message box is deleted</p>
+    <p>if you are the owner of this link and you think it's server error! please contact us <a href="#">contact</a></p>
+    <b>Thanks for your understanding</b>
+</div>
+{% endif %}
+
+    
+{% endblock main %}
+ 

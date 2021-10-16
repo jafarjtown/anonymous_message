@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div,form{
+    border: 2px solid;
+}
+body{
+    padding: 30px;
+    background-image: linear-gradient(350deg, green, red, yellow);
+    height: 100vh;
+}
+.body{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 1, 107);
+    box-shadow: 0 0 2px 5px white;
+}
+.links{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: blue;
+}
+.links > div{
+    padding: 10px;
+    border: none;
+}
+.links > div > div{
+    margin: 5px 0;
+    border: none;
+    background-color: bisque;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#vLink, #sLink{
+    flex: 10;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 3px;
+}
+.copy_btn{
+    padding: 6px;
+    font-weight: 600;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.copy_btn:hover{
+    background-color: white;
+    color: black;
+}
+#clear, #btn{
+    padding: 5px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#btn{
+    width: 200px;
+}
+#links{
+    display: none;
+}
+.start_div{
+    padding: 10px;
+    border-color: blue;
+    border-radius: 10px;
+}
+.start_div > p{
+    font-size: 20px;
+    font-weight: 600;
+    color: bisque;
+}
+.ul_div{
+    padding: 5px;
+    border: none;
+}
+.ul_div > b{
+    padding: 3px;
+    text-transform: capitalize;
+}
+.ul_div > ul{
+    list-style: circle;
+    padding-left: 30px;
+}
+li{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.form{
+    border-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form > textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: .5px solid gray;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.form > button{
+    padding: 9px 14px;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    align-self: flex-end;
+    width: 200px;
+    cursor: pointer;
+}
+.form > div{
+    padding: 10px;
+    background-color: antiquewhite;
+    border: none;
+    margin-bottom: 10px;
+}
+.messages_div{
+    padding: 10px;
+    border-color: blue;
+    border-radius: 10px;
+}
+.message{
+    padding: 5px;
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: 3px 0;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.message > p{
+    color: bisque;
+    border-bottom: 1px solid;
+    width: fit-content;
+}
+.text{
+    padding: 3px;
+    border: none;
+    font-weight: 600;
+}
+.text > p{
+    white-space: pre-wrap;
+    color: white;
+
+}
+.message > span{
+    font-size: 10px;
+    color: bisque;
+}
+.total_m_div{
+    border: none;
+    padding: 3px;
+
+}
+.error{
+    border-color: white;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.errorp{
+    font-size: xx-large;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.error > p{
+    padding: 5px 0;
+}
