@@ -8,13 +8,39 @@
     <title>Anonymous Message</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <body>
+    <nav class="nav">
+        <h3><a href="/"><span class="ng">NG</span>-anonymous
+        </a></h3>
+        <ul>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/how-it-works">process</a>
+            </li>
+        </ul>
+    </nav>
     <div class="body">
         {% block main %}
             
         {% endblock main %}
             
     </div>
-    
+    <footer>
+        <p>Created and maintain by JTech</p>
+        <ul>
+            <h4>
+                Features
+            </h4>
+            <li>
+                secure
+            </li>
+            <li>free</li>
+
+        </ul>
+
+        <span>Proudly made in Nigeria <font color='red'>&hearts;</font></span>
+    </footer>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
